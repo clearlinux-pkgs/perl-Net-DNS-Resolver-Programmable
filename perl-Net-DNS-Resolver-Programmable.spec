@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-DNS-Resolver-Programmable
 Version  : 0.009
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/B/BI/BIGPRESH/Net-DNS-Resolver-Programmable-0.009.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BI/BIGPRESH/Net-DNS-Resolver-Programmable-0.009.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libn/libnet-dns-resolver-programmable-perl/libnet-dns-resolver-programmable-perl_0.009-1.debian.tar.xz
@@ -80,7 +80,7 @@ make TEST_VERBOSE=1 test
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Net-DNS-Resolver-Programmable
 cp %{_builddir}/Net-DNS-Resolver-Programmable-0.009/LICENSE %{buildroot}/usr/share/package-licenses/perl-Net-DNS-Resolver-Programmable/285c6bc69d15ed10dcf4dbf7861ddb61d09df6b4
-cp %{_builddir}/Net-DNS-Resolver-Programmable-0.009/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Net-DNS-Resolver-Programmable/a70741adac3b4af7f60098e076c9ec632342e952
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Net-DNS-Resolver-Programmable/a70741adac3b4af7f60098e076c9ec632342e952
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -105,4 +105,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Net/DNS/Resolver/Programmable.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Net/DNS/Resolver/Programmable.pm
