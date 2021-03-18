@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-DNS-Resolver-Programmable
 Version  : 0.009
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/B/BI/BIGPRESH/Net-DNS-Resolver-Programmable-0.009.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BI/BIGPRESH/Net-DNS-Resolver-Programmable-0.009.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libn/libnet-dns-resolver-programmable-perl/libnet-dns-resolver-programmable-perl_0.009-1.debian.tar.xz
@@ -105,4 +105,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/Net/DNS/Resolver/Programmable.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Net/DNS/Resolver/Programmable.pm
